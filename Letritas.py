@@ -57,7 +57,7 @@ def convergencia(Entrada,Peso,ban,matriz):
 		print("\n Y({})=fh(U({}))={}".format(time+1,time+1,Y1))
 		letra=Convertir(Y1,2)
 		print(letra)
-		con=int(input('Deseas seguir?\n 0. Si\n 1. No'))
+		con=Compara(Y0,Y1)
 		if con==0:
 			print("\nY({})!=Y({})... No converge {} Iteracion\n\n".format(time,time+1,time+1))
 			Y0=Y1
@@ -70,7 +70,6 @@ def convergencia(Entrada,Peso,ban,matriz):
 				print("\nY({})==Y({})... Converge y se acocia con C1".format(time,time+1))
 
 			con=1
-
 
 def Asocia(matriz,Y):
 	j,i=np.shape(matriz)
