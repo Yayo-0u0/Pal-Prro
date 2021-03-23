@@ -1,2 +1,0 @@
-# Pal-Prro
-Red hopfield
