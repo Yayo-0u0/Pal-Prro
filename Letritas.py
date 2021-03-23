@@ -23,7 +23,6 @@ def matriz_de_peso(matriz):
 					Peso[j][i]+=np.longdouble(matriz[k][j]*matriz[k][i])
 	Peso=Peso/N
 	print("\nMatriz de Peso:\n\n {}".format(Peso))
-	print(Peso[0][0])
 	return Peso
 
 def calculo(matriz,MP,Peso):
